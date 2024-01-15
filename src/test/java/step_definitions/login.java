@@ -19,7 +19,7 @@ public class login {
     private WebDriver webDriver;
     private Actions actions;
 
-    public login(JavascriptExecutor js, WebDriverWait wait) {
+    public login() {
         super();
         this.webDriver = Hooks.webDriver;
         this.js = (JavascriptExecutor) webDriver;
