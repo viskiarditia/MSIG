@@ -18,7 +18,7 @@ public class Hooks {
         WebDriverManager.chromedriver().setup();
 
         webDriver = new ChromeDriver();
-        String appUrl = "https://www..com/";
+        String appUrl = "https://vegacorporate.sinarmasmsiglife.co.id/login";
         webDriver.get(appUrl);
         webDriver.manage().window().maximize();
     }
