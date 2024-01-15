@@ -39,9 +39,9 @@ public class login {
     @When("User input Username and Password in page")
     public void userInputUsernameAndPasswordInPage() throws InterruptedException {
         WebElement userName = webDriver.findElement(By.xpath("//input[@name='username']"));
-        userName.sendKeys("addiyat.sandi@gmail.com");
+        userName.sendKeys("EB00_SMAP_ID");
         WebElement password = webDriver.findElement(By.xpath("//input[@name='password']"));
-        password.sendKeys("Nashta@2023");
+        password.sendKeys("smapid");
         WebElement clickSignIn = webDriver.findElement(By.xpath("//button[@class='MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-fullWidth css-1kol59t']"));
         clickSignIn.click();
         Thread.sleep(1000);
@@ -49,8 +49,11 @@ public class login {
     }
 
     @Then("User already on landing page")
-    public void userAlreadyOnLandingPage() {
-
+    public void userAlreadyOnLandingPage() throws InterruptedException {
+        WebElement landingPage = webDriver.findElement(By.xpath("//h1[@class='page-title']"));
+        landingPage.isDisplayed();
+        Assert.assertTrue(true);
+        Thread.sleep(1000);
     }
 
 

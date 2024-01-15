@@ -135,7 +135,7 @@
                             <goal>generate</goal>
                         </goals>
                         <configuration>
-                            <projectName>Alterra Immersive Web Testing</projectName>
+                            <projectName>MSIG</projectName>
                             <outputDirectory>${project.build.directory}/Report/cucumber-reports</outputDirectory>
                             <cucumberOutput>${project.build.directory}/cucumber/cucumber.json</cucumberOutput>
                             <skippedFails>true</skippedFails>
